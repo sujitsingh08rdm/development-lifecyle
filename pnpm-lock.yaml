@@ -37,7 +37,7 @@ importers:
     dependencies:
       '@repo/eslint-config':
         specifier: workspace:*
-        version: link:../../packages/es-lint
+        version: link:../../packages/eslint-config
       '@repo/jest-config':
         specifier: workspace:*
         version: link:../../packages/jest-config
@@ -91,7 +91,23 @@ importers:
         specifier: ^8.1.1
         version: 8.1.5(@types/node@24.13.3)(yaml@2.9.0)
 
-  packages/es-lint: {}
+  packages/eslint-config:
+    dependencies:
+      '@eslint/js':
+        specifier: ^10.0.1
+        version: 10.0.1(eslint@10.7.0)
+      eslint-plugin-react-hooks:
+        specifier: ^7.1.1
+        version: 7.1.1(eslint@10.7.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.5.3
+        version: 0.5.3(eslint@10.7.0)
+      globals:
+        specifier: ^17.7.0
+        version: 17.7.0
+      typescript-eslint:
+        specifier: ^8.64.0
+        version: 8.64.0(eslint@10.7.0)(typescript@6.0.3)
 
   packages/jest-config: {}
 
