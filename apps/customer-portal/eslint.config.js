@@ -1,1 +1,1 @@
-import { reactConfig } from "@repo/esline-config/react";
+import { reactConfig } from "@repo/eslint-config/react";
